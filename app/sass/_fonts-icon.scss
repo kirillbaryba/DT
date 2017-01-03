@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'daimler-font';
+    src: url('../fonts/daimler-font.eot?4bo6sm');
+    src: url('../fonts/daimler-font.eot?4bo6sm#iefix') format('embedded-opentype'), url('../fonts/daimler-font.ttf?4bo6sm') format('truetype'), url('../fonts/daimler-font.woff?4bo6sm') format('woff'), url('../fonts/daimler-font.svg?4bo6sm#daimler-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'daimler-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-specials-menu:before {
+  content: "\e92d";
+}
+.icon-specials:before {
+  content: "\e92c";
+}
+.icon-techdata:before {
+  content: "\e92b";
+}
+.icon-atom:before {
+  content: "\e92a";
+}
+.icon-interview:before {
+  content: "\e929";
+}
+.icon-info:before {
+  content: "\e928";
+}
+.icon-manufacture:before {
+  content: "\e925";
+}
+.icon-design:before {
+  content: "\e927";
+}
+.icon-heavy-truck:before {
+  content: "\e926";
+}
+.icon-engine-pull:before {
+  content: "\e924";
+}
+.icon-cookie:before {
+  content: "\e922";
+}
+.icon-warning:before {
+  content: "\e923";
+}
+.icon-mobile:before {
+  content: "\e921";
+}
+.icon-facebook:before {
+  content: "\e91f";
+}
+.icon-filter:before {
+  content: "\e920";
+}
+.icon-photo-360:before {
+  content: "\e91e";
+  font-size: 1.4em;
+}
+.icon-wmap-marker:before {
+  content: "\e91c";
+}
+.icon-factory:before {
+  content: "\e91d";
+}
+.icon-truck-2:before {
+  content: "\e90c";
+}
+.icon-truck:before {
+  content: "\e909";
+}
+.icon-video:before {
+  content: "\e907";
+}
+.icon-map:before {
+  content: "\e90d";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-calendar:before {
+  content: "\e902";
+}
+.icon-calendar-2:before {
+  content: "\e91b";
+}
+.icon-canceled:before {
+  content: "\e903";
+}
+.icon-paused:before {
+  content: "\e904";
+}
+.icon-caret-right:before {
+  content: "\e905";
+}
+.icon-clear:before {
+  content: "\e906";
+}
+.icon-close:before {
+  content: "\e908";
+}
+.icon-download:before {
+  content: "\e90a";
+}
+.icon-engine:before {
+  content: "\e90b";
+}
+.icon-media:before {
+  content: "\e90e";
+}
+.icon-media-360:before {
+  content: "\e90f";
+}
+.icon-pdf:before {
+  content: "\e910";
+}
+.icon-photo:before {
+  content: "\e911";
+}
+.icon-photo-download:before {
+  content: "\e912";
+}
+.icon-safety:before {
+  content: "\e913";
+}
+.icon-search:before {
+  content: "\e914";
+}
+.icon-settings:before {
+  content: "\e915";
+}
+.icon-sound:before {
+  content: "\e916";
+}
+.icon-speedo:before {
+  content: "\e917";
+}
+.icon-swipe:before {
+  content: "\e918";
+}
+.icon-tap:before {
+  content: "\e919";
+}
+.icon-time-travel:before {
+  content: "\e91a";
+}
+
+
+.icon-xl {
+    font-size: 3em;
+}
+
+.icon-lgx {
+    font-size: 2.5em;
+}
+
+.icon-lg {
+    font-size: 2em;
+}
+
+.icon-md {
+    font-size: 1.5em;
+}
+
+.icon-sm {
+    font-size: 1em;
+}
+
+.icon-hidden {
+    @include opacity(0);
+    @include visibility(hidden);
+    @include backface-visibility(hidden);
+}
+
+.icon-close {
+    cursor: pointer;
+}
+
+.icon-light {
+    color: #C4C4C4;
+}
+
+.fa-1x {
+    font-size: 1.5em;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+.youtube-play {
+    background: url(../img/youtube-play.png);
+    width: 84px;
+    height: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.demo-gallery-poster {
+    &:hover {
+        .youtube-play {
+            background-position: 0 bottom;
+        }
+    }
+}
+
+
+/*-- toogle-close animate--*/
+
+.toggle-mnu {
+    display: block;
+    width: 24px;
+    height: 24px;
+    bottom: 1.5em;
+    left: 1.5em;
+    position: fixed;
+    z-index: 999;
+    transition: all ease .3s;
+    opacity: 1;
+    &.is-hidden {
+        opacity: 0;
+        transition: all ease .3s;
+        visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.toggle-mnu span:after {
+    top: 18px;
+}
+
+.toggle-mnu span {
+    position: relative;
+    display: block;
+}
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.toggle-mnu.on span {
+    background-color: transparent;
+}
+
+.toggle-mnu.on span:before {
+    transform: rotate(45deg) translate(-1px, 0px);
+    -ms-transform: rotate(45deg) translate(-1px, 0px);
+    -webkit-transform: rotate(45deg) translate(-1px, 0px);
+}
+
+.toggle-mnu.on span:after {
+    transform: rotate(-45deg) translate(6px, -7px);
+    -ms-transform: rotate(-45deg) translate(6px, -7px);
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.toggle-mnu {
+    &.toggle-white {
+        position: fixed;
+        &:after {
+            background: #222;
+        }
+        span {
+            background-color: $main-dark-color;
+            &:after,
+            &:before {
+                background-color: $main-dark-color;
+            }
+        }
+    }
+    &.toggle-dark {
+        &:after {
+            background: #fcfcfc;
+        }
+        span {
+            background-color: $main-dark-bg;
+            &:after,
+            &:before {
+                background-color: $main-dark-bg;
+            }
+        }
+    }
+    &:after {
+        content: ' ';
+        display: block;
+        @include size(50px,
+        50px);
+        top: -17px;
+        position: relative;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .9;
+        left: -13px;
+    }
+}
+
+
+/*-- toogle-close animate--*/
+
+
+/*-- toogle-menu no-animate--*/
+
+.toggle-close {
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 24px;
+    cursor: pointer;
+    //@include opacity(1);
+}
+
+.toggle-close span:after,
+.toggle-close span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.toggle-close span:after {
+    top: 18px;
+}
+
+.toggle-close span {
+    position: relative;
+    display: block;
+}
+
+.toggle-close span,
+.toggle-close span:after,
+.toggle-close span:before {
+    width: 100%;
+    height: 1px;
+    background-color: #222;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.toggle-close span {
+    background-color: transparent;
+}
+
+.toggle-close span:before {
+    transform: rotate(45deg) translate(-1px, 0px);
+    -ms-transform: rotate(45deg) translate(-1px, 0px);
+    -webkit-transform: rotate(45deg) translate(-1px, 0px);
+}
+
+.toggle-close span:after {
+    transform: rotate(-45deg) translate(6px, -7px);
+    -ms-transform: rotate(-45deg) translate(6px, -7px);
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+}
+
+
+/*-- /toogle-menu no-animate--*/
+
+//fix icon 360
+.model-media-tabs, .media-tabs, .nav-search {
+    .icon-photo-360 {
+        padding-left: 35px;
+        position: relative;
+        &:before { 
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+    }
+}

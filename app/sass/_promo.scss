@@ -1,0 +1,120 @@
+$promo-lgray: #f3f4f5;
+$promo-pd: 4.286em; //60px
+$promo-fz-ttl: 2.857em; // 40px
+$promo-fz-txt: 1.286em; // 18px
+
+
+.promo-bg {
+    background-color: $promo-lgray;
+    padding: 2em $promo-pd;
+    border-radius: $border-radius-base;
+}
+
+.main-promo {
+    .main-promo-txt {
+        margin: 2em auto 1.5em;
+        font-size: $promo-fz-txt;
+        @extend .ff-light;
+    }
+    .main-promo-title {
+        font-size: $promo-fz-ttl;
+        margin-top: 0;
+        color: $gray;
+    }
+    &.promo-things {
+        @media (min-width: $screen-lg-min) {
+            min-height: 380px;
+        }
+    }
+    .main-promo-info {
+        @media (max-width: $screen-sm-min) {
+            max-width: 100%;
+        }
+        max-width: 50%;
+    }
+    .main-promo-img {
+        position: absolute;
+        top: 15%;
+        &.img-left {
+            left: 5%;
+        }
+        &.img-right {
+            right: 10%;
+        }
+    }
+    &.promo-designer {
+        .designer-body{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .main-promo-txt{         
+            margin: 1.5em 0;
+        }
+        .main-promo-img {
+            top: 0;
+            &.img-right {
+                right: 0;
+            }
+        }
+    }
+}
+
+.promo-things:after {
+    display: none;
+    @media (min-width: $screen-md-min) {
+        display: block;
+        background-image: url("/app/img/bg/bild-14.png");
+        width: 344px;
+        height: 300px;
+        background-size: cover;
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+//join us form
+.join-us-sign {
+    float: left;
+    padding: 2em 0 0;
+    @include size(100%,
+    100%);
+}
+
+//main subscribe form
+.main-subscribe {
+    padding: $promo-pd;
+    @media (min-width: $screen-md-min) {
+        text-align: right;
+    }
+    .subscribe-header {
+        @media (min-width: $screen-md-min) {
+            float: right;
+            max-width: 85%;
+        }
+    }
+    .subscribe-form {
+        max-width: 85%;
+        width: 100%;
+        margin-bottom: 1.5em;
+        @media (min-width: $screen-md-min) {
+            float: right;
+        }
+    }
+    .subscribe-txt {
+        @extend .ff-light;
+        @extend .fw-300;
+    }
+}
+
+//promo designer
+.promo-designer{
+    display: table;
+    @media (min-width: $screen-sm-max) {
+        min-height: 370px;
+    }    
+    .designer-body-item{
+        max-width: 70%;
+    }
+}

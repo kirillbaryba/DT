@@ -1,0 +1,125 @@
+.playlist {
+    padding: 0;
+    @media(min-width: $screen-sm-max) {
+        max-width: 50%;
+    }
+    &-item {
+        position: relative;
+        &:after {
+            content: ' ';
+            display: table;
+            position: absolute;
+            bottom: 0;
+            border-bottom: 1px solid #E6E6E6;
+            width: 300px;
+        }
+//        &:last-child {
+//            &:after {
+//                display: none;
+//            }
+        }
+    
+    .progressBar {
+        position: relative;
+        height:0.286em;
+        width: 100%;
+        margin-top: 20px;        
+        border-radius: 3px;
+        background: #7E7E7E;
+        cursor: pointer;
+    }
+    .progress {
+        width: 0%;
+        height: 0.286em;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        background: #E6E6E6;
+    }
+}
+
+//.track {
+//    position: relative;
+//    .sub-title {
+//        position: absolute;
+//        left: 4.2em;
+//        bottom: 1.8em;
+//    }
+//}
+ul.playlist li {
+    list-style: none;
+}
+
+//div.track span {
+//    display: inline-block;
+//    vertical-align: middle;
+//}
+.track {
+    position: relative;
+    display: table;
+    width: 100%;
+    &-control {
+        width: 60px;
+    }
+    &-control,
+    &-info {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        &-dt {
+            display: table;
+            width: 100%;
+        }
+        &-item {
+            display: table-cell;
+            vertical-align: middle;
+            &.item-time {
+                text-align: right;
+                width: 60px;
+            }
+            &.item-song {
+                @media(max-width: 320px) {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: inline-block;
+                    max-width: 170px;
+                }
+            }
+        }
+    }
+}
+
+span.controls {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/play.png') no-repeat 0;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+span.playing {
+    background-image: url('../img/pause.png') !important;
+}
+.media-all{
+    span.playing {
+    background-image: url('../img/pause-dark.png') !important;
+}
+}
+span.playing.pause {
+    background-image: url('../img/play.png') !important;
+}
+
+.media-all {
+    .playlist {
+        .progressBar {
+            background: #E6E6E6;
+        }
+        .progress {
+            background: #555;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.caption-share-list{
+    display: inline-block;
+}
+.caption-share-btn{
+    display: inline-block;
+    min-width: 42px;
+    text-align: center;
+    background-color: #fff;
+    padding: 6px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: $border-radius-base; 
+}
+.caption-share-input{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+     @media (max-width: 375px) {
+        width: 100%;
+    }
+}

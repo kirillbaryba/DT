@@ -1,0 +1,151 @@
+$tile-popover-bg: rgba(255, 255, 255, 0.75);
+
+
+.main-tile-popover {
+    background: $tile-popover-bg;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    max-width: 95%;
+    min-height: 24.5em;
+    margin: 1em;
+    padding: 3em 1.071em;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-25%);
+    transition: all ease .5s;
+    border-radius: $border-radius-base;
+    @media (max-width: $screen-md-min) {
+        display: none !important;
+        visibility: hidden;
+    }
+    &.is-active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: all ease .5s;
+    }
+    .share-wrapper {
+        display: table;
+        margin: 0 auto;
+         .caption-share-input{
+            width: auto;
+}
+    }    
+   
+}
+
+//step 2
+.popover-tile-info {
+    text-align: center;
+    .product-caption-view {
+        position: absolute;
+        bottom: 2.5em;
+        display: block;
+        left: 0;
+        right: 0;
+    }
+    .product-caption-name {
+        font-size: 2em;
+        margin-top: .5em;
+        margin-bottom: 0;
+        max-width: 80%;
+    }
+    .product-caption-company,
+    .product-caption-price {
+        font-size: 1.429em;
+        @extend .fw-300;
+        @extend .ff-light;
+    }
+}
+
+//step 3
+.popover-tile-addcard {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    border-radius: $border-radius-base;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    padding: 15px;
+    right: 0;
+    .product-caption-name {
+        font-size: 1.286em;
+        @extend .ff-regular;
+    }
+    .product-caption-company {
+        font-size: 1.286em;
+    }
+    .tile-addcard-footer {
+        display: table;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 15px;
+    }
+    hr {
+        border-color: #ccc;
+        margin: 10px 0;
+        width: 50%;
+    }    
+}
+
+.tile-addcard-dt {
+        display: table-cell;
+        vertical-align: bottom;
+        width: 50%;        
+        .addcard-dt-list {
+            font-size: 0.857em;
+            @extend .fw-300;
+            @extend .ff-light;
+            .dt-ttl{
+               min-width: 5em;
+                display: inline-block;
+            }   
+        }
+        .btn-buy {
+            width: 100%;
+        }
+        &.dt-delivery {
+            padding-right: 30px;
+        }
+        .addcard-dt-price{
+            font-size: 1.429em;
+            color: $gray-dark;
+        }
+    }
+
+.tile-addcard-header {
+    .tile-adcard-item {
+        margin: 0;
+        display: table;
+    }
+    margin-bottom: 1em;
+}
+
+.tile-addcard-body{
+    .tile-addcard-option{
+        list-style: none;
+        padding: 0;
+        margin: 0;    
+    }
+    
+    .tile-addcard-option-item{
+        display: inline-block;
+        width: 246px;
+        &:nth-child(odd){
+            padding-right: 5px;    
+        }
+        
+    }
+}
+
+//fix height
+.tile-vertical{
+    .main-tile-popover {
+        min-height: 96.33%;
+    }
+}

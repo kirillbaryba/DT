@@ -1,0 +1,9 @@
+.main-looking{
+    min-height: 20em;// 50em
+    background-color: $promo-lgray;
+    margin-bottom: $tile-mbottom;
+       &-title{
+     text-align: center;
+    }
+    margin-bottom: $tile-mbottom;
+}

@@ -1,0 +1,92 @@
+.time-travel {
+    width: 250px;
+    height: 200px;
+    background: #fcfcfc;
+    padding: 30px 15px;
+    backface-visibility: hidden;
+    visibility: hidden;
+    @include opacity(0);
+    @media (max-width: $screen-xs-min) {
+        width: 100%;
+    }
+    //    @include transition(all ease .5s);
+    //  @include backface-visibility(hidden);
+    transform: translateX(25%) scale(0);
+    transform-origin: right bottom;
+    transition: all cubic-bezier(0.42, 0, 0.1, 0.78) .3s;
+    z-index: 1052;
+    &-detail {
+        //position: relative;
+        > btn {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &-title {
+        font-size: 1.429em;
+        font-weight: 300;
+    }
+    &-close {
+        left: 15px;
+    }
+    &.is-active {
+        transition: all ease .3s;
+        backface-visibility: visible;
+        visibility: visible;
+        @include opacity(1);
+        transform: translateX(0) scale(1);
+        transform-origin: right bottom;
+        //        @include transition(all ease .5s);
+        //        @include backface-visibility(visible);
+    }
+}
+
+.time-travel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.time-travel-btn {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    line-height: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    display: block;
+    transition: all ease .5s;
+    transform: translateX(25%);
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    .icon {
+        position: relative;
+        top: 10px;
+        right: -12px;
+        &:after{
+            content: ' ';
+        display: block;
+        width: 50px;
+        height: 50px;
+        top: -38px;
+        position: relative;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .9;
+        left: -12px;
+        background: #fcfcfc;    
+        }
+        
+    }
+    &.is-active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        backface-visibility: visible;
+    }
+    &:hover {
+        color: lighten(#222, 50%);
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "DT",
+  "authors": [
+    "kirillos <kirill.baryba@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "flickity": "^2.0.3",
+    "lightgallery": "^1.2.21"
+  },
+  "devDependencies": {
+    "awesome-bootstrap-checkbox": "^0.3.7",
+    "font-awesome": "^4.6.3",
+    "bootstrap-select": "^1.10.0",
+    "bootstrap-typeahead": "*",
+    "bootstrap-sass": "^3.3.6"
+  }
+}

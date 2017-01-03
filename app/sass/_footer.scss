@@ -1,0 +1,76 @@
+$footer-title-color: #95989A;
+$footer-subtitle-color: #333;
+$footer-title-size: 2.143em;
+
+.footer {
+    padding: 3em 0 6em;
+    position: relative;
+    float: left;
+    width: 100%;
+    &-promo {
+        @media (min-width: $screen-xs-max) {
+        max-width: 320px;    
+        }        
+        @include center-block();
+        @extend .text-center;
+        @extend .fw-300;
+        &-title {
+            font-size: $footer-title-size;
+            color: $footer-title-color;
+            @include font-family($blacksword, normal);
+            margin-bottom: .5em;
+            line-height: 40px;
+            @media (max-width: $screen-xs-max) {
+                font-size: $footer-title-size / 1.2;
+                @extend .text-center;
+            }
+        }        
+    }
+    &.footer-media{
+        .footer-promo{
+         @extend .text-left;            
+            &-subtitle{
+            color: $footer-subtitle-color;
+            @extend .text-left;            
+            max-width: 390px;
+            @extend .fw-400;
+                @media (max-width: $screen-xs-max) {
+                    max-width: 100%;
+                     @extend .text-center;       
+                }
+            //@include center-block();
+        }
+        }
+        
+    }
+    &-stepmodel{        
+        padding: 0 60px;      
+        @media (max-width: $screen-md-max) {
+            padding: 0 15px;
+        }
+        .model-item{
+            display: block;
+            > span{
+                display: inline-block;
+                max-width: 180px;
+                @media (min-width: $screen-sm-max) {
+                    max-width: 220px;
+                }
+                vertical-align: middle;
+            }
+            &.model-last{
+               float: left;
+                .model-tx{
+                    padding-left: 1.2em;
+                }
+            }
+            &.model-next{
+                float: right;
+                .model-tx{
+                    padding-right: 1.2em;
+                    @extend .text-right;
+                }
+            }
+        }                
+    }
+}

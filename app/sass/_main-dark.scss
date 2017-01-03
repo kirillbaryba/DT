@@ -1,0 +1,31 @@
+$main-dark-bg: #222;
+$main-dark-color: #E6E6E6;
+$main-dark-link-color: #95989A;
+//$main-dark-link-active-color: #E6E6E6;
+//navtabs
+//$nav-tabs-active-link-hover-color: $main-dark-link-color !default;
+
+.main-dark {
+    background-color: $main-dark-bg;
+    color: $main-dark-color;
+    @extend .fw-300;    
+    &.canvas-left{
+//        @include box-shadow(2px 0px 15px rgba(0,0,0,1));
+        //box-shadow: 2px 0px 15px #000;
+    }
+    a{
+     color: $main-dark-color;   
+        @include transition(all ease .5s);
+        &:hover{
+            color: darken($main-dark-color, 30%);
+        }
+        &.btn{
+            color: $main-dark-bg;
+            &:hover{
+                color: lighten($btn-default-color, 15%);
+            }
+        }
+    }       
+}
+
+

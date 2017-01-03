@@ -1,0 +1,38 @@
+$trademark-caption: #BFBFBF;
+$trademark-margin: 2em;
+$trademark-subtitle: 1.429em;
+$trademark-logo-wh: 108px;
+$trademark-font-size: 1.143em;
+
+
+.trademark-logo {
+    width: $trademark-logo-wh;
+    height: $trademark-logo-wh;
+    margin-left: $trademark-margin * 2;
+    margin-bottom: $trademark-margin;
+    @media (max-width: $screen-sm-min){
+        max-width: 100%;
+            @include center-block();
+    }
+    > img {             
+        margin-bottom: $trademark-margin;
+    }
+}
+
+.model-trade-subtitle {
+    @include font-family($blacksword, normal);
+    font-size: $trademark-subtitle;
+    color: $trademark-caption;
+}
+.trademark-list {
+    padding: 0 3em;
+    margin-bottom: $trademark-margin;
+    font-size: $trademark-font-size;
+    &-item {
+        margin-bottom: $trademark-margin / 4;
+        .item-tx-title {
+            color: $trademark-caption;
+            padding-right: $trademark-margin / 4;
+        }
+    }
+}

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="theme-color" content="#222222">
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <!--    <link rel="stylesheet" href="../../../dist/css/lightgallery.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--    <script type="text/javascript" src="../../js/modernizr.custom.js"></script>-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="alert-cookie">
+    <i class="icon icon-lg icon-cookie"></i>
+    <span class="alert-cookie-text">We use cookies on our site. A cookie is a text file that is put on your computer and used so you can experience the site in the most optimized way.</span>
+    <span class="alert-btn-wrapper"><a href="#" class="btn btn-default btn-outline alert-cookie-close">OK</a></span>
+   <!--    <i class="icon icon-close alert-cookie-close" style="margin-left: 30px"></i>-->
+    </div>
+    <!--   offset-menu-->
+    <aside class="offset-menu offset-left">
+        <span class="icon icon-lg icon-close aside-close"></span>
+        <div class="offset-menu-one">
+        <div class="nav-logo"><a href="/"><img class="nav-logo-img img-responsive" src="../../img/nav-logo.png" alt=""></a></div>
+        
+<!--
+            <ul class="sub-years">
+                <li class="sub-years-count">120</li>
+                <li class="sub-years-txt">YEARS</li>
+                <li class="sub-divider"></li>
+                <li class="sub-daimler">
+                    <span class="sub-daimler-dm">DAIMLER</span>
+                    <span class="sub-daimler-tr">TRUCKS</span>
+                </li>
+            </ul>
+-->
+
+            <!--   .menu-nav-->
+            <nav class="menu-nav nav-top">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a class="nav-list-link"><span  class="icon icon-lg icon-calendar"></span><span class="nav-list-link-tx"> History of Daimler Trucks</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-map"></span><span class="nav-list-link-tx">World of Daimler trucks</span></a></li>
+                    <li id="sub-list" class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-speedo"></span><span class="nav-list-link-tx">Daimler Specials</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-video"></span><span class="nav-list-link-tx">Daimler video</span></a></li>
+                </ul>
+            </nav>
+            <!--   /.menu-nav-->
+             <div class="get-app">
+            <a href="https://www.appstore.com/" class="btn btn-darken btn-app btn-android "><span class="icon icon-md icon-mobile"></span><span class="btn-tx"> Get the mobile app</span></a>
+            <a href="https://play.google.com/store?hl=ru" class="btn btn-darken btn-app btn-ios hide"><span class="icon icon-md icon-mobile"></span> <span class="btn-tx"> Get the mobile app</span></a>
+        </div>
+        </div>
+
+        <div class="offset-menu-two">
+            <span class="icon-lg icon-arrow-left"></span>
+            <!--   .sub-nav-->
+            <nav class="sub-nav nav-top">
+                <h2 class="sub-nav-title">SPECIALS</h2>
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-speedo"></span><span class="nav-list-link-tx"> Technical Data</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-engine"></span><span class="nav-list-link-tx">Engines Development</span></a></li>
+                    <li id="sub-list" class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-truck"></span><span class="nav-list-link-tx">Truck Design</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-safety"></span><span class="nav-list-link-tx">Safety Technologies</span></a></li>
+                </ul>
+            </nav>
+            <!--   /.sub-nav-->
+        </div>           
+        
+        <!--   .menu-search-->
+        <div class="m-search">
+            <a href="#" id="search-icon" onclick="return inputSwitcher(this);" class="icon icon-lg icon-search icon-search-desctop"></a>
+            <a href="#" id="search-icon-mobile" class="icon icon-lg icon-search icon-search-mobile"></a>
+            <div class="m-search-dt hide">
+               <div class="form-group">
+                    <input type="text" class="form-control form-line" placeholder="Enter a search request">                   
+                </div>
+                 <a href="#" class="btn btn-search btn-darken"><span class="icon icon-md icon-search"></span> <span class="btn-tx">Search</span></a>
+            </div>
+        </div>
+        <!--   /.menu-search-->
+    </aside>
+    <!--   ./offset-menu-->
+
+    <!-- main content -->
+    <main class="main-container main-dark">
+       <div class="backdrop fade"></div>
+
+            <!--            <div class="model-yers-title">1937</div>-->
+            <!--    .main-carousel-->
+            <div class="main-carousel">
+                <div class="carousel-cell"><img class="carousel-cell-image img-responsive" data-flickity-lazyload="../../img/slide-1.png" alt="title img"></div>
+                <div class="carousel-cell"><img class="carousel-cell-image img-responsive" data-flickity-lazyload="../../img/slide-2.png" alt="title img"></div>
+                <div class="carousel-cell"><img class="carousel-cell-image img-responsive" data-flickity-lazyload="../../img/slide-3.png" alt="title img"></div>
+                <div class="carousel-cell"><img class="carousel-cell-image img-responsive" data-flickity-lazyload="../../img/slide-2.png" alt="title img"></div>
+                <div class="carousel-cell"><img class="carousel-cell-image img-responsive" data-flickity-lazyload="../../img/slide-1.png" alt="title img"></div>
+                <div class="carousel-cell"><img class="carousel-cell-image img-responsive" data-flickity-lazyload="../../img/slide-3.png" alt="title img"></div>
+            </div>
+            <!--    /.main-carousel-->
+             <div class="container-fluid">
+            <!--   .model-container-->
+            <div class="model-container">
+                <div class="row">
+                    <!--   .nav-anchor-->
+                    <div class="col-md-3 col-sm-4">
+                        <nav class="nav-anchor">
+                            <ul class="nav-list">
+                                <li class="nav-list-item"><a href="#nav-view-photo" class="nav-list-link page-scroll"><span class="icon icon-md icon-photo"></span><span class="nav-list-link-tx hidden-xs"> View photos</span></a></li>
+
+                                <li class="nav-list-item"><a href="#nav-view-photo360" class="nav-list-link page-scroll"><span class="icon icon-md icon-photo"></span><span class="nav-list-link-tx hidden-xs"> View 360 photos</span></a></li>
+
+                                <li class="nav-list-item"><a href="#nav-view-wvideo" class="nav-list-link page-scroll"><span class="icon icon-md icon-media"></span><span class="nav-list-link-tx hidden-xs">Watch videos</span></a></li>
+
+                                <li class="nav-list-item"><a href="#nav-view-wvideo-360" class="nav-list-link page-scroll"><span class="icon icon-md icon-media-360"></span><span class="nav-list-link-tx hidden-xs">Watch 360 videos</span></a></li>
+
+                                <li id="sub-list" class="nav-list-item"><a href="#nav-view-audios" class="nav-list-link page-scroll"><span class="icon icon-md icon-sound"></span><span class="nav-list-link-tx hidden-xs">Listen audios</span></a></li>
+
+                                <li class="nav-list-item"><a href="#nav-read-pdf" class="nav-list-link page-scroll"><span class="icon icon-md icon-pdf"></span><span class="nav-list-link-tx hidden-xs">Read PDF</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--   /.nav-anchor-->
+
+                    <!--   .model-trade-->
+                    <div class="col-md-9 col-sm-8">
+                        <div class="model-trade">
+                            <h1 class="model-trade-title">MERCEDES-BENZ ACTROS MP2</h1>
+                            <div class="model-trade-date">
+                                <span class="icon icon-md icon-calendar-2"></span><span class="model-trade-date-tx">1937-1940</span>
+                            </div>
+                            <div class="model-trade-descript">
+                                <p>
+                                    All beginnings are difficult – not only for people who are ahead of their time. While it is true that the world’s first truck initiated motorized road trans-port as we know it today, it did not attract a single buyer in Germany. In the early stages, the truck had to over-come a great deal of resis-tance – much more than the pas-senger car.
+                                </p>
+                                <p>
+                                    Unlike the car, the truck had a hard time winning recognition in the early days. Whereas the high society had welcomed the car with open arms as an enrichment of their personal freedom, the truck came up against severe skepticism in industry: capital goods had to earn money. And of course, Gottlieb Daimler’s first truck was matured only to a limited extent – even though its time had definitely come.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--   /.model-trade-->
+
+                    <div class="col-md-12">
+                        <div class="model-generation">
+                            <h4 class="generation-title">PREVIOUS GENERATION</h4>
+                            <ul class="generation-list">
+                                <li class="generation-list-item"><a href="#" class="item-link">Mercedes-Benz MP1 '1857</a></li>
+                                <li class="generation-list-item"><a href="#" class="item-link">Mercedes-Benz MP2 '1864</a></li>
+                                <li class="generation-list-item"><a href="#" class="item-link">Mercedes-Benz MP3 '1896</a></li>
+                            </ul>
+
+                            <h4 class="generation-title">NEXT GENERATION</h4>
+                            <ul class="generation-list">
+                                <li class="generation-list-item"><a href="#" class="item-link">Mercedes-Benz MP1 '1857</a></li>
+                                <li class="generation-list-item"><a href="#" class="item-link">Mercedes-Benz MP2 '1864</a></li>
+                                <li class="generation-list-item"><a href="#" class="item-link">Mercedes-Benz MP3 '1896</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--   .history-->
+                    <div class="col-md-12">
+                        <div class="model-history">
+                            <h2 class="history-title">HISTORY</h2>
+                            <div class="history-descript">
+                                <p>Mercedes-Benz traces its origins to Karl Benz's creation of the first petrol-powered car, the Benz Patent Motorwagen, financed by Bertha Benz and patented in January 1886, and Gottlieb Daimler and engineer Wilhelm Maybach's conversion of a stagecoach by the addition of a petrol engine later that year. The Mercedes automobile was first marketed in 1901 by Daimler-Motoren-Gesellschaft. Emil Jellinek, an Austrian automobile entrepreneur who worked with DMG created the trademark in 1902, naming the 1901 Mercedes 35hp after his daughter Mercedes Jellinek. The first Mercedes-Benz brand name vehicles were produced in 1926, following the merger of Karl Benz's and Gottlieb Daimler's companies into the Daimler-Benz company. On 28 June, 1926, Mercedes Benz was formed with the merger of Karl Benz and Gottlieb Daimler's two companies. Mercedes-Benz has introduced many technological and safety innovations that later became common in other vehicles. Mercedes-Benz is one of the best-known and established automotive brands in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--   .model-video-->
+                    <div class="col-md-12">
+                        <div class="model-history-video">
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XnTPYjNrsKY" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!--   /.model-video-->
+
+                    <div class="col-md-12">
+                        <div class="model-history">
+                            <h3 class="history-descript-ttl">PINION DRIVE AS A FORERUNNER OF PLANETARY AXLES</h3>
+                            <p>
+                                The truck engine operated on gasoline – which, however, had to be bought at the chemist’s at the time. On the other hand, this vehicle already boasted a feature which was to become the trademark of New Generation trucks through to the SK at a much later stage and which is still indispensable in present-day construction site vehicles – an early type of planetary axle.
+                            </p>
+                            <h3 class="history-descript-ttl">PINION DRIVE AS A FORERUNNER OF PLANETARY AXLES</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium libero quae dolor distinctio voluptatum voluptate repellendus laboriosam. Iste quaerat porro natus vitae esse hic libero fugiat molestiae officiis! Aut alias tenetur explicabo nemo praesentium cumque placeat harum, corrupti nihil vitae asperiores sunt eaque aspernatur perspiciatis deleniti eveniet blanditiis dignissimos dolorem. Veritatis voluptatibus vero facilis fuga laudantium, neque iusto nostrum praesentium animi minima tenetur, temporibus pariatur ex sint enim aut ducimus eum ratione velit. Illum, eligendi esse? Magni vero aliquam omnis natus quidem. Minima consequuntur, necessitatibus eius, cumque nam velit dolor iusto quam, ipsa asperiores facilis animi veniam modi ut numquam dolores vel atque temporibus, nobis facere exercitationem natus doloribus ab! Totam temporibus optio aspernatur earum doloremque possimus aliquam iste illum similique ea modi nobis molestiae, debitis ratione quam adipisci quibusdam facilis eius, facere tempore sit? Quia nihil dignissimos harum, eius dicta doloribus reprehenderit,</p>
+
+                            <p>aspernatur ratione corporis vero culpa. Reprehenderit, ea ipsum vitae ullam reiciendis eum, quod laboriosam saepe suscipit earum aut molestias repudiandae dolor voluptate repellat unde sed, fugit non temporibus voluptatibus qui. Ipsam libero itaque consequatur sint, tempore ipsa voluptate, omnis ab possimus impedit, dignissimos vero, voluptatum amet quas. Nemo, qui. Esse assumenda, distinctio labore rem consectetur maiores accusamus modi. Error quia est velit harum molestiae, voluptate, consequatur voluptas repellendus qui facilis recusandae explicabo quasi, suscipit officiis beatae autem. Dolorum sint sapiente veritatis sequi voluptatibus, est cum porro tempora ipsam blanditiis recusandae non fugiat et sunt, consequatur voluptatum? Eveniet beatae unde rem cum quia asperiores ipsam officia ea temporibus mollitia enim nobis excepturi dolorem magnam ut delectus quis facilis dolore hic, iste praesentium tempore facere! Mollitia maxime quas quis nemo quam eligendi incidunt illum at reprehenderit ex, ut magni assumenda ad architecto perspiciatis voluptates error nihil placeat quo dolore quae vitae, quod. Quidem, numquam blanditiis saepe cum,</p>
+                            <p>
+                                officiis quo placeat delectus officia magnam reprehenderit, vitae nemo. Maxime quos a pariatur fugiat nobis aperiam iure consequuntur explicabo alias voluptatem laudantium obcaecati quibusdam quia, ea, distinctio quaerat sapiente in quod fugit voluptatibus. Pariatur, vitae quibusdam. Sequi molestias laboriosam, sit non repudiandae quis doloribus accusantium nemo repellat quibusdam voluptate delectus labore dolores dolorem aliquam, voluptatibus eligendi cumque quos, quidem maxime culpa. Veniam, quam? Veritatis distinctio reiciendis soluta quae iusto, voluptatum sed earum, sapiente dolores nulla ipsa facilis quisquam dolorem ducimus sequi maxime nesciunt suscipit alias tempore eius excepturi, culpa ut. Tempora tenetur nam ea officia, nobis, quis sapiente laudantium, magnam ratione quos soluta, cupiditate repudiandae fugit odio rerum quisquam facere ipsam. Nisi magnam cupiditate amet autem, saepe consequuntur enim quo modi. Ad modi, assumenda ipsa, dolor sunt quae amet voluptas quod aut maiores nobis soluta vel repellendus asperiores. Eos rem ut qui odit blanditiis dolore quisquam ipsam eaque excepturi labore. Facere voluptates, a ex aliquid quo quidem expedita reiciendis consequatur laboriosam possimus sapiente sunt, delectus velit veniam. Vitae eius hic cumque dolores. Dicta, eum at cum assumenda tenetur, facilis in deserunt itaque doloribus veniam. Maiores cumque reiciendis consectetur nihil id, quia deleniti, saepe omnis reprehenderit magnam non inventore? Officia nesciunt non placeat..</p>
+                        </div>
+                        <!--   /.history-->
+                    </div>                   
+                </div>
+            </div>
+             
+                   <!--   .model-media-tabs-->
+                   <div class="row gutter-20">
+                    <div class="col-md-12">
+                        <div class="model-media-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li id="nav-view-photo" role="presentation" class="active"><a href="#view-photo" aria-controls="view-photo" role="tab" data-toggle="tab"><span class="icon icon-md icon-photo"></span> <span class="nav-view-tx hidden-xs">View photos</span></a></li>
+
+                                <li id="nav-view-wvideo" role="presentation"><a href="#watch-video" aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-md icon-media"></span> <span class="nav-view-tx hidden-xs">Watch videos</span></a></li>
+
+                                <li id="nav-view-photo360" role="presentation"><a href="#view-photo-360" aria-controls="view-photo-360" role="tab" data-toggle="tab"><span class="icon icon-md icon-photo"></span> <span class="nav-view-tx hidden-xs">View photos 360</span></a></li>
+
+                                <li id="nav-view-wvideo-360" role="presentation"><a href="#watch-video-360" aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-md icon-media-360"></span> <span class="nav-view-tx hidden-xs">Watch videos 360</span></a></li>
+
+                                <li id="nav-view-audios" role="presentation"><a href="#listen-audios" aria-controls="messages" role="tab" data-toggle="tab"><span class="icon icon-md icon-sound"></span> <span class="nav-view-tx hidden-xs">Listen audios</span></a></li>
+
+                                <li id="nav-read-pdf" role="presentation"><a href="#read-pdf" aria-controls="settings" role="tab" data-toggle="tab"><span class="icon icon-md icon-pdf"></span> <span class="nav-view-tx hidden-xs">Read PDF</span></a></li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="view-photo">                                    
+
+                                        <!--   .lightgallery caption btn-->
+                                        <div class="caption1" style="display: none">
+                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897</h3>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                        </div>
+
+                                        <div class="caption2" style="display: none">
+                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 2</h3>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                        </div>
+
+                                        <div class="caption3" style="display: none">
+                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 3</h3>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                        </div>
+                                        <div class="caption4" style="display: none">
+                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 4</h3>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                        </div>
+                                        <div class="caption5" style="display: none">
+                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 5</h3>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                        </div>
+
+                                        <!--   /.lightgallery caption btn-->
+
+                                        <!--   .lightgallery-->
+                                        <div id="lightgallery">
+
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="http://www.planwallpaper.com/static/images/1080p-Wallpapers.jpg" data-sub-html=".caption1">
+                                                    <img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 1"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption2"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 2"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 3"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption4"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 4"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption5"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 5"></a>
+                                            </div>
+
+                                        </div>
+                                        <!--   /.lightgallery-->                                  
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="watch-video">
+                                    <div class="row">
+                                        <!--    .video-gallery-->
+                                        <div id="video-gallery">
+
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <div class="video-responsive">
+                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/XnTPYjNrsKY" data-iframe="true">
+                                                        <div class="demo-gallery-poster">
+                                                            <img src="http://img.youtube.com/vi/XnTPYjNrsKY/0.jpg" class="img-responsive" />
+                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <div class="video-responsive">
+                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/XnTPYjNrsKY" data-iframe="true">
+                                                        <div class="demo-gallery-poster">
+                                                            <img src="http://img.youtube.com/vi/XnTPYjNrsKY/0.jpg" class="img-responsive" />
+                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <div class="video-responsive">
+                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/XnTPYjNrsKY" data-iframe="true">
+                                                        <div class="demo-gallery-poster">
+                                                            <img src="http://img.youtube.com/vi/XnTPYjNrsKY/0.jpg" class="img-responsive" />
+                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--    /.video-gallery-->
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="view-photo-360">
+                                    <div class="row">
+
+                                        <!--   .lightgallery-360-->
+                                        <div id="lightgallery">
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/tabs-1.png"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 1"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/tabs-2.png"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 2"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/tabs-1.png"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 3"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/tabs-1.png"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 4"></a>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <a class="lightgallery-item" data-src="../../img/tabs-1.png"><img class="img-responsive model-photo-dt" src="../../img/tabs-1.png" alt="title tabs img 5"></a>
+                                            </div>
+                                        </div>
+                                        <!--   /.lightgallery-360-->
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="watch-video-360">
+                                    <div class="row">
+
+                                        <!--    .video-gallery-360-->
+                                        <div id="video-gallery-360">
+                                            
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <div class="video-responsive">
+                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/xal78egELos" data-iframe="true">
+                                                        <div class="demo-gallery-poster">
+                                                            <img src="http://img.youtube.com/vi/xal78egELos/0.jpg" class="img-responsive" />
+                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                           
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <div class="video-responsive">
+                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/xal78egELos" data-iframe="true">
+                                                        <div class="demo-gallery-poster">
+                                                            <img src="http://img.youtube.com/vi/xal78egELos/0.jpg" class="img-responsive" />
+                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+                                                <div class="video-responsive">
+                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/xal78egELos" data-iframe="true">
+                                                        <div class="demo-gallery-poster">
+                                                            <img src="http://img.youtube.com/vi/xal78egELos/0.jpg" class="img-responsive" />
+                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--    /.video-gallery-360-->
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="listen-audios">
+                                    <!-- Simple audio playback -->
+<!--                                    <audio class="playlist" src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" preload="true" controls />-->
+
+                                    <ul class="playlist">
+                                        <li class="playlist-item">
+                                            <div class="track">
+                                                <span class="controls" id="playToggle"></span>
+                                                <span class="title">Engines development</span>
+                                                <span class="sub-title"><span class="icon icon-calendar-2"></span> 1937</span>
+                                                <span class="minus">-</span>
+                                                <span id="timeleft">3:57</span>
+                                            </div>
+                                            <audio preload="true">
+                                                <source src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" type="audio/mp3" />
+                                                <source src="../../audio/mum.ogg" type="audio/ogg" /> Your browser does not support the <code>audio</code> element.
+                                            </audio>
+                                        </li>
+                                        <li class="playlist-item">
+                                            <div class="track">
+                                                <span class="controls" id="playToggle"></span>
+                                                <span class="title">The power of Daimler trucks</span>
+                                                <span class="sub-title"><span class="icon icon-truck-2"></span> Mercedes-Benz Actros MP1</span>
+                                                <span class="minus">-</span>
+                                                <span id="timeleft">2:35</span>
+                                            </div>
+                                            <audio>
+                                                <source src="../../audio/speed.mp3" type="audio/mp3" />
+                                                <source src="../../audio/speed.ogg" type="audio/ogg" /> Your browser does not support the <code>audio</code> element.
+                                            </audio>
+                                        </li>
+                                        <li class="playlist-item">
+                                            <div class="track">
+                                                <span class="controls" id="playToggle"></span>
+                                                 <span class="title">The power of Daimler trucks</span>
+                                                <span class="sub-title"><span class="icon icon-calendar-2"></span> 1937</span>
+                                                <span class="minus">-</span>
+                                                <span id="timeleft">2:50</span>
+                                            </div>
+                                            <audio>
+                                                <source src="../../audio/top90(radio).mp3" type="audio/mp3" />
+                                                <source src="../../audio/top90(radio).ogg" type="audio/ogg" /> Your browser does not support the <code>audio</code> element.
+                                            </audio>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="read-pdf">
+                                    
+                                    <ul class="pdf-list list-unstyled">
+                                        <li class="pdf-list-item">                                          
+                                            <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                <span class="icon icon-lgx icon-pdf"></span>
+                                                <span class="pdf-text">Pdf title test long text </span>
+                                                <span class="pdf-size">2mb</span>
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="pdf-list-item">
+                                             <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                <span class="icon icon-lgx icon-pdf"></span>
+                                                <span class="pdf-text">Pdf title test long text </span>
+                                                <span class="pdf-size">7mb</span>
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="pdf-list-item">
+                                           <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                <span class="icon icon-lgx icon-pdf"></span>
+                                                <span class="pdf-text">Pdf title test long text </span>
+                                                <span class="pdf-size">14mb</span>
+                                            </a>
+                                            
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--   /.model-media-tabs-->
+            </div>
+            <!--   /.model-container-->
+            <footer class="footer">
+               <div class="footer-stepmodel">
+                   <a href="#" class="model-item model-last"><span class="icon icon-md icon-arrow-left"></span> <span class="model-tx hidden-xs"> Carl Benz modified his passenger car to the truck</span></a>
+                   <a href="#" class="model-item model-next"> <span class="model-tx hidden-xs"> In 1898 Daimler presents a new five-tonner</span> <span class="icon icon-md icon-arrow-right"></span></a>
+                </div>
+<!--
+                <div class="footer-promo">
+                    <h4 class="footer-promo-title">Like the story?<br>Share it with your friends!</h4>
+-->
+<!--
+                    <a href="#" class="btn btn-facebook">
+                        <span class="fa fa-2x fa-facebook" aria-hidden="true"></span>
+                        <span class="btn-tx">Share on Facebook</span></a>
+-->
+                </div>
+                
+
+            </footer>
+    </main>
+
+    <a class="toggle-mnu toggle-white"><span></span></a>
+
+
+
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+    <!--   sidebar-menu-->
+    <script type="text/javascript" src="../../js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="../../js/menu.js"></script>
+    <script type="text/javascript" src="../../js/carusel.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script type="text/javascript" src="../../js/lightgallery.min.js"></script>
+    <script src="../../js/lg-thumbnail.min.js"></script>
+    <script src="../../js/lg-video.min.js"></script>
+    <script src="../../js/lg-fullscreen.min.js"></script>
+
+    <!-- page-scrolling -->
+    <script src="../../js/scrolling-nav.js"></script>
+    <!-- audio-player -->
+    <!--    <script src="../../js/audiojs/audio.min.js"></script>-->
+    <script src="../../js/audio.js"></script>
+    <script src="../../js/audio-player.js"></script>
+
+
+
+
+</body>

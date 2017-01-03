@@ -1,0 +1,217 @@
+//.main-container{
+//    &.main-worldmap{
+//        @media (max-width: $screen-sm-max) { 
+//            overflow: hidden;           
+//        }                
+//    }
+//}
+//worldmap tm-popover
+.worldmap {
+    &.factory-map {
+        height: 100%;
+        overflow: hidden;
+    }
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+    .promo-text {
+        position: absolute;
+        bottom: 5em;
+        left: 2em;
+        z-index: 3;
+        pointer-events: none;
+        @media (max-width: $screen-sm-max) {
+            font-size: 85%;
+        }
+        .promo-text-title{
+            margin-bottom: 1em;
+            max-width: 420px;
+            @media (max-width: $screen-sm-max) {
+                font-size: 2em;
+            }
+        }
+    }
+    &-img {
+        @include size(100%, 100%);
+        @media (max-width: $screen-sm-max) {
+            width: 1024px;
+        }
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+    .time-travel-btn {
+        &.factory-search{
+        position: fixed;
+        z-index: 6;
+        bottom: .5em;
+        right: .5em;
+            .icon-filter{
+                top: .6em;
+                position: absolute;
+                font-size: .9em;
+                left: .45em;
+            }
+        &:after{
+            content: ' ';
+            background: #fcfcfc;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: block;
+        }    
+        }
+        
+//        .icon-filter {
+//            
+//            &:before {
+//                top: .1em;
+//                position: relative;
+//                font-size: .9em;
+//                left: .05em;
+//            }
+//        }
+    }
+}
+
+//worldmap tm-popover
+.tm-popover {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 33%;
+    padding: 120px 80px 0;
+    background-color: $main-dark-bg;
+    height: $global-vh;
+    overflow-y: auto;
+    min-height: $global-vh;
+    z-index: 1075;
+    @include translate3d(50%, 0, 0);
+    @include opacity(0);
+    @include visibility(hidden);
+    @include backface-visibility(hidden);
+    @include transition(all ease 0.3s);
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+        padding: 100px 50px;
+        font-size: 75%;
+    }
+    
+    @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+        width: 50%;
+    }
+    
+    //    @media (min-width: $screen-xs-max) and  (max-width: $screen-md-min) {
+    //     width: 50%;   
+    //    }
+    &.is-active {
+        @include translate3d(0, 0, 0);
+        @include opacity(1);
+        @include visibility(visible);
+        @include backface-visibility(visible);
+        @include transition(all ease 0.3s);
+    }
+    
+    .trademark-list {
+        padding: 0;
+        .item-tx {
+            color: $main-dark-color;
+        }
+        margin-bottom: 6em;
+    }
+    
+    .icon-close {
+        position: absolute;
+        left: 30px;
+        top: 60px;
+        cursor: pointer;
+        color: $main-dark-color;
+        @include transition(all ease 0.3s);
+        @media (max-width: $screen-sm-max) {
+            top: 30px;
+            left: 15px;
+        }
+        &:hover {
+            @include opacity(.75);
+        }
+    }
+    
+    .tm-logo {
+        width: 108px;
+        @media (max-width: $screen-sm-max) {
+            max-width: 50px;
+        }
+    }
+    
+    .tm-title {
+        font-size: 2.143em;
+        color: $main-dark-color;
+        margin: 40px auto;
+        @media (max-width: $screen-sm-max) {
+            font-size: 2em;
+        }
+    }
+    
+    .tm-photo {
+        margin: 40px auto;
+    }
+}
+//map-tabs 
+.map-tabs {
+    @include size(300px, 50px);
+    display: table;
+    position: fixed;
+    z-index: 5;
+    top: 1.5em;
+    right: 1.5em;
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
+    
+    background: rgba(255, 255, 255, 0.5);
+    //    transform: translateX(0px);
+    //    transition: all ease .5s;
+    //    &.canvas-left {
+    //        transform: translateX(300px);
+    //        transition: all ease .5s;
+    //    }
+    &-link {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        > .icon {
+            padding-right: .5em;
+        }
+        .icon-wmap-marker {
+            position: relative;
+            top: 3px;
+        }
+        &.map-active {
+            @include opacity(.5);
+            .map-tabs-tx {
+                border: none;
+            }
+        }
+    }
+    
+    &-tx {
+        border-bottom: 1px solid;
+        padding-bottom: .2em;
+        vertical-align: text-bottom;
+    }
+}
+//marker
+.map-marker {
+    @include transition(all ease 0.3s);
+    @include translate3d(0, 0, 0);
+    &:hover {
+        @include translate3d(0, -2%, 0);
+    }
+}

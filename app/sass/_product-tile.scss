@@ -1,0 +1,116 @@
+.main-tile {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: $screen-xs-max) {
+        margin-bottom: 15px;
+    }
+    .product-tile-img {
+        > img{
+            transform: scale(1);
+            transition: all ease .5s;    
+        }        
+    }
+    &:hover .product-tile-img {
+        > img{
+        transform: scale(1.1);
+        transition: all ease .5s;        
+        }    
+}
+}
+
+.caption-share-wrapper {
+    padding: 12px 0 8px;
+}
+
+.caption-tablet {
+    @media (min-width: $screen-lg-min) {
+        display: none;
+    }
+    text-align: center;
+    @extend .fw-300;
+}
+
+.product-tile-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-tile-bg {
+    background-color: hsla(0, 0%, 100%, 0.75);
+    padding: .5em .7em;
+    border-radius: 4px;
+    display: none;
+    height: 42px;
+    @media (min-width: $screen-lg-min) {
+        display: block;
+    }
+}
+
+.caption-bg {
+    background-color: $promo-lgray;
+    padding: 30px 10px;
+    @include border-bottom-radius($border-radius-base);
+    min-height: 235px;
+}
+
+.product-tile-price {
+    &-qnt {
+        font-size: 1.071em;
+        @extend .ff-light;
+        @extend .fw-300;
+        @include opacity(.75);
+    }
+}
+
+// type main-tile
+.product-caption-name {
+    font-size: $tile-cap-name;
+    display: inline-block;
+    //@include center-block();
+    @include text-overflow();
+    margin-bottom: $tile-cap-margin;
+    @extend .ff-light;
+}
+
+.product-caption-company {
+    font-size: $tile-cap-company;
+    margin-bottom: $tile-cap-margin;
+    display: inline-block;
+    //@include center-block();
+    @extend .ff-light;
+}
+
+.product-caption-view {
+    @extend .ff-light;
+    @extend .fw-300;
+    color: $gray-light;
+}
+
+.product-caption-price {
+    margin-bottom: $tile-cap-margin * 3;
+}
+
+.caption-share-pin-quant {
+    padding-left: 0.5em;
+}
+
+//product tile tablet vertical
+.tile-vertical-one {
+    .caption-tablet {
+        @media (max-width: $screen-sm-max) {
+            min-height: 34.5em;
+            display: table;
+            width: 100%;
+            .caption-tablet-body {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.tile-label{
+    @media (max-width: $screen-sm-max) {
+        display: none !important;
+    }
+}

@@ -1,0 +1,48 @@
+$table-outline-pd: 15px;
+.table-outline {
+    border: 1px solid #ddd;
+    padding: $table-outline-pd;
+    border-radius: $border-radius-base;
+    margin-bottom: $table-outline-pd;
+    @media (max-width: $screen-xs-max) {
+        padding: 0;
+    }
+}
+
+table {
+    .td-user,
+    .title,
+    .title-catalogue {
+        @media (min-width: $screen-sm-min) {
+            //max-width: 300px;
+            .tablesaw-cell-content,
+            .title-link {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: block;
+                white-space: nowrap;
+            }
+            }
+         @media (max-width: $screen-sm-min) {
+            .tablesaw-cell-content {
+                max-width: 150px;
+            }
+            }
+         @media (min-width: $screen-sm-max) and (max-width: 1680px) {
+            .tablesaw-cell-content {
+                max-width: 300px;
+            }
+            }
+             
+            .title-link {
+                max-width: 300px;
+            }
+        
+        .title-catalogue {
+            max-width: 200px;
+            .tablesaw-cell-content {
+                max-width: 300px;
+            }
+        }
+    }
+}

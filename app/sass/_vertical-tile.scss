@@ -1,0 +1,17 @@
+.tile-vertical {
+    .popover-tile-detail {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .popover-tile-info {
+            margin: 50% auto;
+        }
+        .popover-tile-share {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 57%;
+        }
+    }
+}

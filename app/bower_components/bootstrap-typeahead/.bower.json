@@ -1,0 +1,36 @@
+{
+  "name": "bootstrap-typeahead",
+  "main": "bootstrap-typeahead.js",
+  "homepage": "https://github.com/deil87/bootstrap-typeahead",
+  "authors": [
+    "deil <deil_87@mail.ru>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bootstrap",
+    "typeahead"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-typeahead": "git://github.com/deil87/bootstrap-typeahead.git"
+  },
+  "_release": "8fda412925",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8fda4129258b4928327532798d224b6e6044a499"
+  },
+  "_source": "https://github.com/deil87/bootstrap-typeahead.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-typeahead",
+  "_direct": true
+}

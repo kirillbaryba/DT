@@ -1,0 +1,134 @@
+$popover-bg: #222;
+$popover-color: #E6E6E6;
+.timeline-grid-popover {
+    background: $popover-bg;
+    color: $popover-color;
+    padding-top: 30px;
+    transition: all ease .5s;
+    width: 0px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+    overflow: auto;
+    backface-visibility: hidden;
+    visibility: hidden;
+    transform: translateX(50%);
+    &.is-active {
+        width: 390px;
+        opacity: 1;
+        backface-visibility: visible;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+.grid-popover-close {
+    position: absolute;
+    left: 1.7rem;
+    top: 40px;
+    z-index: 9;
+    color: #BFBFBF;
+    font-size: 1.2em;
+}
+
+.popover-model-list-item {
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+.popover-model-list-item-img,
+.popover-model-list-item-info {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.popover-model-list-item-info {
+    width: 100%;
+    padding-left: .5em;
+    position: relative;
+    font-size: 14px;
+    &:before {
+        border-bottom: 1px solid;
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        margin: 0 auto;
+        display: table;
+        left: 30px;
+        right: 0;
+    }
+    &:after {
+        content: '\e905';
+        position: absolute;
+        right: 0;
+        top: 40%;
+        font-family: 'daimler-font' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .list-item-name,
+    .list-item-years {
+        text-transform: uppercase;
+        line-height: 1.7;
+        &-tx {
+            @include text-overflow;
+            max-width: 180px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        > .icon {
+            width: 25px;
+            display: inline-block;
+            text-align: center;
+            margin-right: 5px;
+        }
+    }
+}
+
+.popover-model-list-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.timeline-grid-popover.is-active .popover-model-list {
+    opacity: 1;
+    visibility: visible;
+    backface-visibility: hidden;
+    transition: all ease .5s;
+    transition-delay: .5s;
+    transform: translateY(0);
+    padding: 0 1.786em;
+}
+
+.popover-model-list {
+    font-size: 1.2rem;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0 1.786em;
+    transition: all ease .5s;
+    backface-visibility: hidden;
+    transform: translateY(50%);
+    &-years {
+        font-size: 40px;
+        letter-spacing: .5em;
+        line-height: 1;
+    }
+    &-years,
+    &-title {
+        margin-left: 115px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+}
+

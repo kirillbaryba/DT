@@ -1,0 +1,306 @@
+//outline btn mixin
+// Alternate buttons
+// --------------------------------------------------
+@mixin button-outline($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    &:focus,
+    &.focus {
+        color: darken($color, 25%);
+        //background-color: darken($background, 10%);
+        background-color: transparent;
+        border-color: darken($border, 25%);
+    }
+    &:hover {
+        color: darken($color, 12%);
+        //background-color: darken($background, 10%);
+        background-color: transparent;
+        border-color: darken($border, 12%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: darken($color, 12%);
+        //background-color: darken($background, 10%);
+        background-color: transparent;
+        border-color: darken($border, 12%);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: darken($color, 25%);
+            //background-color: darken($background, 17%);
+            background-color: transparent;
+            border-color: darken($border, 25%);
+        }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            color: darken($color, 50%);
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
+}
+
+//inverce btn mixin
+@mixin button-inverse($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    &:focus,
+    &.focus {
+        color: darken($color, 5%);
+        //background-color: darken($background, 10%);
+        background-color: transparent;
+        border-color: darken($border, 5%);
+    }
+    &:hover {
+        color: darken($color, 10%);
+        //background-color: darken($background, 10%);
+        background-color: transparent;
+        border-color: darken($border, 10%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: darken($color, 12%);
+        //background-color: darken($background, 10%);
+        background-color: transparent;
+        border-color: darken($border, 12%);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: darken($color, 12%);
+            //background-color: darken($background, 17%);
+            background-color: transparent;
+            border-color: darken($border, 12%);
+        }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            color: darken($color, 50%);
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
+}
+
+//inverce btn mixin
+@mixin button-link-variant($color) {
+    color: $color;
+    &:focus,
+    &.focus {
+        color: darken($color, 5%);
+    }
+    &:hover {
+        color: darken($color, 10%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: darken($color, 12%);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: darken($color, 12%);
+        }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            color: darken($color, 50%);
+        }
+    }
+    .badge {
+        color: $color;
+    }
+}
+
+// Alternate outline buttons
+// --------------------------------------------------
+.btn-default {
+    //@include button-outline($btn-default-color, $btn-default-bg, $btn-default-border);
+    &.btn-outline {
+        @include button-outline($btn-default-bg, transparent, $btn-default-border);
+    }
+}
+
+.btn-primary {
+    //@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+    &.btn-outline {
+        @include button-outline($btn-primary-bg, transparent, $btn-primary-border);
+    }
+}
+
+// Success appears as green
+.btn-success {
+    //@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+    &.btn-outline {
+        @include button-outline($btn-success-bg, transparent, $btn-success-border);
+    }
+}
+
+// Info appears as blue-green
+.btn-info {
+    //@include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+    &.btn-outline {
+        @include button-outline($btn-info-bg, transparent, $btn-info-border);
+    }
+}
+
+// Warning appears as orange
+.btn-warning {
+    // @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+    &.btn-outline {
+        @include button-outline($btn-warning-bg, transparent, $btn-warning-border);
+    }
+}
+
+// Danger and error appear as red
+.btn-danger {
+    // @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+    &.btn-outline {
+        @include button-outline($btn-danger-bg, transparent, $btn-danger-border);
+        &.btn-inverse {
+            @include button-inverse($btn-danger-color, transparent, $btn-danger-color);
+        }
+    }
+}
+
+//add variant buttons
+.btn-gray {
+    @include button-variant($btn-gray-color, $btn-gray-bg, $btn-gray-border);
+    text-align: left;
+}
+
+.btn-buy {
+    @include button-variant($btn-buy-color, $btn-buy-bg, $btn-buy-border);
+    @include size(102px, 34px);
+}
+
+.btn-pink {
+    @include button-variant($btn-buy-color, $btn-buy-bg, $btn-buy-border);
+    //@include size(102px, 34px);    
+}
+
+.btn-darken {
+    @include button-variant($btn-darken-color, $btn-darken-bg, $btn-darken-border);
+    font-size: 1em;
+    border-radius: $border-radius-large / 3;
+}
+
+//modify btn-link color
+.btn-link {
+    &.btn-link-danger {
+        @include button-link-variant($btn-danger-color);
+    }
+}
+
+//modal buttons 
+.btn-vertical {
+    .btn {
+        min-height: 34px;
+        margin-bottom: 10px;
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.btn-group {
+    width: 100%;
+    &.btn-group-block {
+        > .btn {
+            width: 50%;
+        }
+    }
+}
+
+.btn-facebook {
+    @include size(264px, 44px);
+    font-size: 16px;
+    line-height: 44px;
+    font-size: 16px;
+    line-height: 30px;
+    border: none;
+    background-color: $main-dark-color;
+    border-radius: $border-radius-small;
+    .btn-tx {
+        padding-left: 1em;
+        color: #222222;
+    }
+    > span {
+        vertical-align: middle;
+    }
+}
+
+.btn-gfacebook {
+    .btn-tx {
+        padding-left: .5em;
+        @media (max-width: $screen-xs-max) {
+            display: none;
+        }
+    }
+}
+
+.btn-caption-title {
+    @include size(auto, 40px);
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: $border-radius-small;
+    @include transition(all ease .5s);
+    text-align: left;
+    margin-left: 1.25em;
+    @media (max-width: $screen-xs-max) {
+        @include size(auto, 40px);
+        margin: 0 auto;
+    }
+    .btn-tx {
+        font-size: 0.857em;
+    }
+    > span {
+        vertical-align: middle;
+        &.fa {
+            padding-right: .2em;
+        }
+    }
+    &:hover,
+    &:active {
+        @include transition(all ease .5s);
+    }
+}

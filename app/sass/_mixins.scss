@@ -1,0 +1,27 @@
+// Mixins
+// --------------------------------------------------
+
+// Utilities
+//@import "app/sass/mixins/border-radius";
+//@import "app/sass/mixins/btn-outline";
+//@import "app/sass/mixins/link";
+
+
+// Components
+@mixin font-family($ff-font-name, $ff-weight) {
+    font-family: $ff-font-name;     
+    font-weight: $ff-weight;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin visibility($visibility) {
+     -moz-visibility: $visibility;
+          visibility: $visibility;
+}

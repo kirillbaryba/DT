@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <!--    <link rel="stylesheet" href="../../../dist/css/lightgallery.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--    <script type="text/javascript" src="../../js/modernizr.custom.js"></script>-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--
+   <div class="alert-cookie">
+    <i class="icon icon-lg icon-cookie" style="margin-right: 10px"></i>
+    <span>We use cookies on our site. A cookie is a text file that is put on your computer and used so you can experience the site in the most optimized way.</span>
+    <i class="icon icon-close alert-cookie-close" style="margin-left: 30px"></i>
+    </div>
+-->
+    <!--   offset-menu-->
+    <aside class="offset-menu offset-left">
+        <span class="icon icon-lg icon-close aside-close"></span>
+        <div class="offset-menu-one">
+            <div class="nav-logo">
+                <a href="/"><img class="nav-logo-img img-responsive" src="../../img/nav-logo.png" alt=""></a>
+            </div>
+
+            <!--   .menu-nav-->
+            <nav class="menu-nav nav-top">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a class="nav-list-link"><span class="icon icon-lg icon-calendar"></span><span class="nav-list-link-tx"> History of Daimler Trucks</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-map"></span><span class="nav-list-link-tx">World of Daimler trucks</span></a></li>
+                    <li id="sub-list" class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-specials-menu"></span><span class="nav-list-link-tx">Daimler Specials</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-video"></span><span class="nav-list-link-tx">Daimler Media</span></a></li>
+                </ul>
+            </nav>
+            <!--   /.menu-nav-->
+        </div>
+
+        <div class="offset-menu-two">
+            <span class="icon-lg icon-arrow-left"></span>
+            <!--   .sub-nav-->
+            <nav class="sub-nav nav-top">
+                <h2 class="sub-nav-title">SPECIALS</h2>
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-speedo"></span><span class="nav-list-link-tx"> Technical Data</span></a></li>
+                    <li onclick="location.href='article.html';" class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-engine"></span><span class="nav-list-link-tx">Engines Development</span></a></li>
+                    <li id="sub-list" class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-truck"></span><span class="nav-list-link-tx">Truck Design</span></a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-safety"></span><span class="nav-list-link-tx">Safety Technologies</span></a></li>
+                </ul>
+            </nav>
+            <!--   /.sub-nav-->
+        </div>
+
+        <!--   .menu-search-->
+        <div class="m-search">
+            <a class="icon icon-lg icon-search"></a>
+            <div class="m-search hide">
+                <input type="text" class="form-control form-white" placeholder="Enter a search request">
+                <a href="" class="btn btn-default"><span class="icon icon-search"></span> Search</a>
+            </div>
+        </div>
+        <!--   /.menu-search-->
+    </aside>
+    <!--   ./offset-menu-->
+
+    <!--   .fixed-media-tabs-->
+    <header class="nav-media navbar-fixed-top">
+        <div class="backdrop fade"></div>
+        <a class="arrow-back-link"  href=""><span class="icon-lg icon-arrow-left arrow-back arrow-dark"></span></a>
+        <div class="model-container search-container col-md-offset-4">
+            <div class="media-search search-result">
+                <h1 class="media-search-title">SEARCH RESULTS</h1>
+                <p class="media-search-subtitle">15 found</p>
+                <div class="form-search">
+                    <form class="form-horizontal">
+                        <input type="text" class="form-control input-search">
+                        <button href="#" class="btn btn-search btn-gray"><span class="icon icon-md icon-search"></span> <span class="bt-tx hidden-xs">Start new search</span></button>
+
+                    </form>
+                </div>
+                <!-- .nav-search -->
+                <ul class="nav-search" role="tablist">
+                    <li id="nav-search-all" role="presentation" class="nav-search-item active">
+                        <a href="#search-all" class="nav-tabs-all" aria-controls="view-photo" role="tab" data-toggle="tab">
+                            <span class="nav-view-tx">All results</span></a>
+                    </li>
+
+                    <li id="nav-search-history" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-history" aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-md icon-calendar-2"></span> <span class="nav-view-tx hidden-xs">Timeline</span></a></li>
+
+
+                    <li id="nav-search-trademark" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-trademark" aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx hidden-xs">Trademark</span></a></li>
+
+                    <li id="nav-search-article" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-article" aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-md icon-specials"></span> <span class="nav-view-tx hidden-xs">Specials</span></a></li>
+
+                    <li id="nav-search-photo" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-photo" aria-controls="settings" role="tab" data-toggle="tab"><span class="icon icon-md icon-photo"></span> <span class="nav-view-tx hidden-xs">Photo</span></a></li>
+
+                    <li id="nav-search-photo-360" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-photo-360" aria-controls="settings" role="tab" data-toggle="tab"><span class="icon icon-md icon-media-360"></span> <span class="nav-view-tx hidden-xs">Photo 360</span></a></li>
+
+                    <li id="nav-search-video" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-video" aria-controls="settings" role="tab" data-toggle="tab"><span class="icon icon-md icon-media"></span> <span class="nav-view-tx hidden-xs">Video</span></a></li>
+
+                    <li id="nav-search-audio" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-audio" aria-controls="settings" role="tab" data-toggle="tab"><span class="icon icon-md icon-sound"></span> <span class="nav-view-tx hidden-xs">Audio</span></a></li>
+
+                    <li id="nav-search-pdf" role="presentation" class="nav-search-item"><a class="nav-search-item-link" href="#search-pdf" aria-controls="settings" role="tab" data-toggle="tab"><span class="icon icon-md icon-pdf"></span> <span class="nav-view-tx hidden-xs">Pdf</span></a></li>
+                </ul>
+                <!-- /.nav-search -->
+            </div>
+        </div>
+    </header>
+    <!--   .fixed-media-tabs-->
+    <!-- main content -->
+    <main class="main-container">
+        <div class="backdrop fade"></div>        
+        <div class="container-fluid">
+            <!--   .model-container-->
+            <div class="model-container search-container">
+                <!--   .model-media-tabs-->
+                <div class="model-media-tabs media-all">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="search-all">
+                            <div class="row gutter-20">
+                                <!--   .search-all-history-->
+                                <div class="search-all-history col-md-offset-4">
+                                    <div class="col-md-6">
+                                        <div class="tabpanel-title"><span class="icon icon-md icon-calendar-2"></span> <span class="nav-view-tx">History of Daimler Trucks</span></div>
+                                        <ul class="popover-model-list list-search is-active">
+                                            <li class="popover-model-list-item" onclick="location.href='model.html';">
+                                                <div class="popover-model-list-item-img">
+                                                    <img src="http://placehold.it/108x72" alt="">
+                                                </div>
+
+                                                <div class="popover-model-list-item-info">
+                                                    <div class="list-item-name"><span class="icon icon-sm icon-light icon-truck-2"></span><span class="list-item-name-tx">L 1500/2000 test long text L 1500/2000 test long text L 1500/2000 test long text</span> </div>
+                                                    <div class="list-item-years"><span class="icon icon-sm icon-light icon-calendar-2"></span><span class="list-item-years-tx">1937-1941</div>
+                                            </div>
+                                        </li>
+                                        <li class="popover-model-list-item" onclick="location.href='model.html';">
+                                            <div class="popover-model-list-item-img">
+                                                <img src="http://placehold.it/108x72" alt="">
+                                            </div>
+
+                                            <div class="popover-model-list-item-info">
+                                                <div class="list-item-name"><span class="icon icon-sm icon-light icon-truck-2"></span><span class="list-item-name-tx">L 1500/2000 test long text</span> </div>
+                                                    <div class="list-item-years"><span class="icon icon-sm icon-light icon-calendar-2"></span><span class="list-item-years-tx">1937-1941</div>
+                                            </div>
+                                        </li>
+                                           
+                                        <li class="popover-model-list-item" onclick="location.href='model.html';">
+                                            <div class="popover-model-list-item-img">
+                                                <img src="http://placehold.it/108x72" alt="">
+                                            </div>
+
+                                            <div class="popover-model-list-item-info">
+                                                <div class="list-item-name"><span class="icon icon-sm icon-light icon-truck-2"></span><span class="list-item-name-tx">L 1500/2000 test long text</span> </div>
+                                                    <div class="list-item-years"><span class="icon icon-sm icon-light icon-calendar-2"></span><span class="list-item-years-tx">1937-1941</div>
+                                            </div>
+                                        </li>
+                                           
+                                        <li class="popover-model-list-item" onclick="location.href='model.html';">
+                                            <div class="popover-model-list-item-img">
+                                                <img src="http://placehold.it/108x72" alt="">
+                                            </div>
+
+                                            <div class="popover-model-list-item-info">
+                                                <div class="list-item-name"><span class="icon icon-sm icon-light icon-truck-2"></span><span class="list-item-name-tx">L 1500/2000 test long text</span> </div>
+                                                    <div class="list-item-years"><span class="icon icon-sm icon-light icon-calendar-2"></span><span class="list-item-years-tx">1937-1941</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> 
+                                     
+                                    </div>
+                                    <div class="clearfix"></div>
+                                <!--   .search-all-trademark-->
+                                 <div class="search-all-trademark col-md-offset-4">                                                                                                   
+                                      <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Trademark</span></div>
+
+                                                    <!--  .search-tm-list-->
+                                                    <div class="s-tm-list">
+                                                        <div class="col-md-6">
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img">
+                                                                    <a href="#"><img class="img-responsive" src="../../img/search-1.png" alt="Trademark logo"></a>
+                                                                </div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Mitsubishi</a></div>
+                                                                    <div class="tm-list-dt-subttl">Founders: Mitsubishi Fuso Truck and Bus Corporation</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img">
+                                                                    <a href="#"><img class="img-responsive" src="../../img/search-2.png" alt="Trademark logo"></a>
+                                                                </div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Mitsubishi</a></div>
+                                                                    <div class="tm-list-dt-subttl">Founders: Mitsubishi Fuso Truck and Bus Corporation</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img">
+                                                                    <a href="#"><img class="img-responsive" src="../../img/search-3.png" alt="Trademark logo"></a>
+                                                                </div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Mitsubishi</a></div>
+                                                                    <div class="tm-list-dt-subttl">Founders: Mitsubishi Fuso Truck and Bus Corporation</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img">
+                                                                    <a href="#"><img class="img-responsive" src="../../img/search-5.png" alt="Trademark logo"></a>
+                                                                </div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Mercedes-AMG GmbH</a></div>
+                                                                    <div class="tm-list-dt-subttl">Founders:Hans Werner Aufrecht Erhard Melcher</div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!--  /.search-tm-list-->
+                                                    </div>
+                                                </div>
+                                                <!--   /.search-all-trademark-->
+                                                <div class="clearfix"></div>
+                                                <!--   .search-all-special-->
+                                                <div class="search-all-special col-md-offset-4">
+                                                    <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Special</span></div>
+
+                                                    <!--  .search-sp-list-->
+                                                    <div class="s-tm-list s-sp-list">
+                                                        <div class="col-md-6">
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img"><a href="#"><span class="icon icon-lg icon-speedo"></span></a></div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Technical Data</a></div>
+                                                                    <div class="tm-list-dt-subttl">Special</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img"><a href="#"><span class="icon icon-lg icon-engine"></span></a></div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Engines Development</a></div>
+                                                                    <div class="tm-list-dt-subttl">Special</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img"><a href="#"><span class="icon icon-lg icon-truck"></span></a></div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Safety Technologies</a></div>
+                                                                    <div class="tm-list-dt-subttl">Special</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="s-tm-list-item">
+                                                                <div class="tm-list-img"><a href="#"><span class="icon icon-lg icon-safety"></span></a></div>
+                                                                <div class="tm-list-dt">
+                                                                    <div class="tm-list-dt-ttl"><a href="#">Truck Design</a></div>
+                                                                    <div class="tm-list-dt-subttl">Special</div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!--  /.search-sp-list-->
+                                                    </div>
+                                                </div>
+                                                <!--   /.search-all-special-->
+                                                <div class="clearfix"></div>
+                                                <!--   .search-all-photo360-->
+                                                <div class="search-all-photo360 col-md-offset-4">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Daimler photo 360</span></div>
+                                                        <!--   .lightgallery caption btn-->
+                                                        <div class="caption1" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+
+                                                        <div class="caption2" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 2</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+
+                                                        <div class="caption3" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 3</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+                                                        <div class="caption4" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 4</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+                                                        <div class="caption5" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 5</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+
+                                                        <!--   /.lightgallery caption btn-->
+
+                                                        <!--   .lightgallery-->
+                                                        <div id="lightgallery">
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="http://www.planwallpaper.com/static/images/1080p-Wallpapers.jpg" data-sub-html=".caption1">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption2">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--   /.lightgallery-->
+                                                        <!--  /.search-all-special-->
+
+                                                    </div>
+                                                </div>
+                                                <!--   /.search-all-photo360-->
+                                                <div class="clearfix"></div>
+                                                <!-- .search-all-photo-->
+                                                <div class="search-all-photo col-md-offset-4">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Daimler foto</span></div>
+                                                        <!--   .lightgallery caption btn-->
+                                                        <div class="caption1" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+
+                                                        <div class="caption2" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 2</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+
+                                                        <div class="caption3" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 3</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+                                                        <div class="caption4" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 4</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+                                                        <div class="caption5" style="display: none">
+                                                            <h3 class="caption-title">Daimler Geschäfts- und Lastwagen '1897 5</h3>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="btn-tx">Go to Model description</span></a>
+                                                            <a href="#" class="btn btn-darken btn-caption-title"><span class="fa fa-1x fa-facebook" aria-hidden="true"></span>
+                                                <span class="btn-tx"> Share on Facebook</span></a>
+                                                        </div>
+
+                                                        <!--   /.lightgallery caption btn-->
+
+                                                        <!--   .lightgallery-->
+                                                        <div id="lightgallery">
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="http://www.planwallpaper.com/static/images/1080p-Wallpapers.jpg" data-sub-html=".caption1">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption2">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="../../img/gallery-big@2x.png" data-sub-html=".caption3">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <a class="lightgallery-item" data-src="http://www.planwallpaper.com/static/images/1080p-Wallpapers.jpg" data-sub-html=".caption1">
+                                                                    <figure class="model-photo-dt">
+                                                                        <img class="img-responsive" src="../../img/tabs-2.png" alt="title tabs img 1">
+                                                                        <figcaption><span class="lightgallery-item-tx"> DAIMLER LKW <span class="lightgallery-item-years">'1899</span></figcaption>
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--   /.lightgallery-->
+                                                    </div>
+                                                </div>
+                                                <!-- /.search-all-photo-->
+                                                <div class="clearfix"></div>
+
+                                                <!-- .search-all-video-->
+                                                <div class="search-all-video col-md-offset-4">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Daimler video</span></div>
+                                                        <!--    .video-gallery-->
+                                                        <div id="video-gallery">
+
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <div class="video-responsive">
+                                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/XnTPYjNrsKY" data-iframe="true">
+                                                                        <div class="demo-gallery-poster">
+                                                                            <img src="http://img.youtube.com/vi/XnTPYjNrsKY/0.jpg" class="img-responsive" />
+                                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <div class="video-responsive">
+                                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/XnTPYjNrsKY" data-iframe="true">
+                                                                        <div class="demo-gallery-poster">
+                                                                            <img src="http://img.youtube.com/vi/XnTPYjNrsKY/0.jpg" class="img-responsive" />
+                                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                                                                <div class="video-responsive">
+                                                                    <div class="video-responsive-item" data-src="https://www.youtube.com/embed/XnTPYjNrsKY" data-iframe="true">
+                                                                        <div class="demo-gallery-poster">
+                                                                            <img src="http://img.youtube.com/vi/XnTPYjNrsKY/0.jpg" class="img-responsive" />
+                                                                            <i class="youtube-play" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--    /.video-gallery-->
+                                                    </div>
+                                                </div>
+                                                <!-- /.search-all-video-->
+
+
+                                                <!--   .search-all-audio-->
+                                                <div class="search-all-audio col-md-offset-4">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Daimler audio</span></div>
+                                                        <ul class="playlist">
+                                                            <li class="playlist-item">
+                                                                <div class="track">
+                                                                    <span class="controls" id="playToggle"></span>
+                                                                    <span class="title">Engines development</span>
+                                                                    <span class="sub-title"><span class="icon icon-calendar-2"></span> 1937</span>
+                                                                    <span class="minus">-</span>
+                                                                    <span id="timeleft">3:57</span>
+                                                                </div>
+                                                                <audio preload="true">
+                                                                    <source src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" type="audio/mp3" />
+                                                                    <source src="../../audio/mum.ogg" type="audio/ogg" /> Your browser does not support the <code>audio</code> element.
+                                                                </audio>
+                                                            </li>
+                                                            <li class="playlist-item">
+                                                                <div class="track">
+                                                                    <span class="controls" id="playToggle"></span>
+                                                                    <span class="title">The power of Daimler trucks</span>
+                                                                    <span class="sub-title"><span class="icon icon-truck-2"></span> Mercedes-Benz Actros MP1</span>
+                                                                    <span class="minus">-</span>
+                                                                    <span id="timeleft">2:35</span>
+                                                                </div>
+                                                                <audio>
+                                                                    <source src="../../audio/speed.mp3" type="audio/mp3" />
+                                                                    <source src="../../audio/speed.ogg" type="audio/ogg" /> Your browser does not support the <code>audio</code> element.
+                                                                </audio>
+                                                            </li>
+                                                            <li class="playlist-item">
+                                                                <div class="track">
+                                                                    <span class="controls" id="playToggle"></span>
+                                                                    <span class="title">The power of Daimler trucks</span>
+                                                                    <span class="sub-title"><span class="icon icon-calendar-2"></span> 1937</span>
+                                                                    <span class="minus">-</span>
+                                                                    <span id="timeleft">2:50</span>
+                                                                </div>
+                                                                <audio>
+                                                                    <source src="../../audio/top90(radio).mp3" type="audio/mp3" />
+                                                                    <source src="../../audio/top90(radio).ogg" type="audio/ogg" /> Your browser does not support the <code>audio</code> element.
+                                                                </audio>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--   /.search-all-audio-->
+
+                                                <!--   .search-all-pdf-->
+                                                <div class="search-all-pdf col-md-offset-4">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="tabpanel-title"><span class="icon icon-md icon-truck-2"></span> <span class="nav-view-tx">Daimler pdf</span></div>
+                                                        <!--   .pdf-list-->
+                                                        <ul class="pdf-list list-unstyled">
+                                                            <li class="pdf-list-item">
+                                                                <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                                    <span class="icon icon-lgx icon-pdf"></span>
+                                                                    <span class="pdf-text">Pdf title test long text </span>
+                                                                    <span class="pdf-size">2mb</span>
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="pdf-list-item">
+                                                                <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                                    <span class="icon icon-lgx icon-pdf"></span>
+                                                                    <span class="pdf-text">Pdf title test long text </span>
+                                                                    <span class="pdf-size">7mb</span>
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="pdf-list-item">
+                                                                <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                                    <span class="icon icon-lgx icon-pdf"></span>
+                                                                    <span class="pdf-text">Pdf title test long text </span>
+                                                                    <span class="pdf-size">14mb</span>
+                                                                </a>
+
+                                                            </li>
+                                                        </ul>
+                                                        <!--   /.pdf-list-->
+                                                    </div>
+                                                </div>
+                                                <!--   /.search-all-pdf-->
+
+                                    </div>
+                                    <!--   /.search-all-history-->
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="search-history">
+                                    <div class="row">
+                                        search history
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-trademark">
+                                    <div class="row">
+                                        tab trademark
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-article">
+                                    <div class="row">
+                                        search-article
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-photo">
+                                    <div class="row">
+                                        search-photo
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-photo-360">
+                                    <div class="row">
+                                        search-photo-360
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="search-video">
+                                    <div class="row">
+                                        search video
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-audio">
+                                    <div class="row">
+                                        search audio
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-pdf">
+                                    <div class="row">
+                                        <!--   .pdf-list-->
+                                        <ul class="pdf-list list-unstyled">
+                                            <li class="pdf-list-item">
+                                                <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                    <span class="icon icon-lgx icon-pdf"></span>
+                                                    <span class="pdf-text">Pdf title test long text </span>
+                                                </a>
+                                                <span class="pdf-size">2mb</span>
+                                            </li>
+                                            <li class="pdf-list-item">
+                                                <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                    <span class="icon icon-lgx icon-pdf"></span>
+                                                    <span class="pdf-text">Pdf title test long text </span>
+                                                </a>
+                                                <span class="pdf-size">7mb</span>
+                                            </li>
+                                            <li class="pdf-list-item">
+                                                <a class="pdf-list-item-link" href="../../pdf/file-1.pdf">
+                                                    <span class="icon icon-lgx icon-pdf"></span>
+                                                    <span class="pdf-text">Pdf title test long text </span>
+                                                </a>
+                                                <span class="pdf-size">14mb</span>
+                                            </li>
+                                        </ul>
+                                        <!--   /.pdf-list-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   /.model-media-tabs-->
+                    </div>
+
+                </div>
+                <!--   /.model-container-->
+                <footer class="footer footer-media">
+                    <div class="footer-promo">
+                        <h4 class="footer-promo-title">The End</h4>
+                        <p class="footer-promo-subtitle">You've reached the end of the list!
+                            <br>We have some more medias for you.</p>
+                    </div>
+                </footer>
+    </main>
+    <a class="toggle-mnu">
+        <div class="toggle-bg">
+            <span></span>
+        </div>
+    </a>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+    <!--   sidebar-menu-->
+    <script type="text/javascript" src="../../js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="../../js/menu.js"></script>
+    <script type="text/javascript" src="../../js/carusel.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script type="text/javascript" src="../../js/lightgallery.min.js"></script>
+    <script src="../../js/lg-thumbnail.min.js"></script>
+    <script src="../../js/lg-video.min.js"></script>
+    <script src="../../js/lg-fullscreen.min.js"></script>
+
+    <!-- page-scrolling -->
+    <script src="../../js/scrolling-nav.js"></script>
+    <!-- audio-player -->
+    <!--    <script src="../../js/audiojs/audio.min.js"></script>-->
+    <script src="../../js/audio.js"></script>
+    <script src="../../js/audio-player.js"></script>
+
+</body>

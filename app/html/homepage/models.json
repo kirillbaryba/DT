@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "title": "Daimler-Lastwagen",
+    "start_date": 1896,
+    "end_date": 1898,
+    "image": "200x150.png",
+    "description": ""
+  },
+  {
+    "id": 2,
+    "title": "Benz Lieferungswagen",
+    "start_date": 1896,
+    "end_date": 1902,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 3,
+    "title": "Daimler Geschäfts- und Lastwagen",
+    "start_date": 1897,
+    "end_date": 1905,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 4,
+    "title": "Daimler Lastwagen",
+    "start_date": 1899,
+    "end_date": 1903,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 5,
+    "title": "Benz Motorlastwagen",
+    "start_date": 1900,
+    "end_date": 1902,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "title": "Daimler (Marienfelde) Lastwagen",
+    "start_date": 1903,
+    "end_date": 1905,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 7,
+    "title": "Daimler (Marienfelde) Geschäfts- und Lastwagen",
+    "start_date": 1905,
+    "end_date": 1909,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "title": "S.A.G. Gaggenau Lastwagen",
+    "start_date": 1907,
+    "end_date": 1910,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 9,
+    "title": "S.A.G. Gaggenau Lieferwagen",
+    "start_date": 1907,
+    "end_date": 1910,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 11,
+    "title": "Daimler (Marienfelde) Lastwagen",
+    "start_date": 1908,
+    "end_date": 1915,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 12,
+    "title": "Benz Gaggenau Lastwagen BL 10, SL 12, GL 12",
+    "start_date": 1911,
+    "end_date": 1913,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 13,
+    "title": "Benz Gaggenau Lieferungswagen",
+    "start_date": 1911,
+    "end_date": 1916,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 14,
+    "title": "Daimler (Untertürkheim) Lieferwagen",
+    "start_date": 1912,
+    "end_date": 1921,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 15,
+    "title": "Benz Gaggenau Lastwagen KL 14/ML 13",
+    "start_date": 1913,
+    "end_date": 1916,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 16,
+    "title": "Benz Gaggenau Lieferungswagen",
+    "start_date": 1913,
+    "end_date": 1916,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 17,
+    "title": "Daimler (Marienfelde) Lastwagen",
+    "start_date": 1915,
+    "end_date": 1917,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 18,
+    "title": "Benz Gaggenau Lastwagen 3 K",
+    "start_date": 1916,
+    "end_date": 1925,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "title": "Benz Gaggenau Lastwagen, 5, 5 K 2 sowie 5 K 3 und 5 CN",
+    "start_date": 1916,
+    "end_date": 1925,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "title": "Daimler (Marienfelde) Lastwagen der Typenreihe DR",
+    "start_date": 1917,
+    "end_date": 1925,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 21,
+    "title": "Benz Gaggenau Lastwagen der Typenreihe 1C und 2C",
+    "start_date": 1919,
+    "end_date": 1926,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 22,
+    "title": "Benz Gaggenau Lastwagen der Typenreihen 3C und 3 CN",
+    "start_date": 1920,
+    "end_date": 1926,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 23,
+    "title": "Lastwagen der Typenreihen L und N",
+    "start_date": 1927,
+    "end_date": 1933,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 24,
+    "title": "Lastwagen der Baureihe N 56",
+    "start_date": 1928,
+    "end_date": 1933,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 25,
+    "title": "Lastwagen der Typenreihen G 3, L/LG/LGF 1500–3000",
+    "start_date": 1929,
+    "end_date": 1944,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 26,
+    "title": "Lo/LZ 2000–5000",
+    "start_date": 1930,
+    "end_date": 1939,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 27,
+    "title": "Lastwagen der Typenreihe L 8500",
+    "start_date": 1934,
+    "end_date": 1936,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 28,
+    "title": "Lastwagen Typ L 6500",
+    "start_date": 1935,
+    "end_date": 1940,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 29,
+    "title": "Lastwagen Typ L 10 000",
+    "start_date": 1935,
+    "end_date": 1941,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 30,
+    "title": "Lastwagen Typ L 4500",
+    "start_date": 1939,
+    "end_date": 1944,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 31,
+    "title": "Lastwagen L 701",
+    "start_date": 1944,
+    "end_date": 1949,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 33,
+    "title": "Schwere Lkw L 4500, L 5000, L 5500, L 325, L 330",
+    "start_date": 1945,
+    "end_date": 1954,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 32,
+    "title": "Mittelschwere Lkw aus Mannheim, L 701, L 3250, L 3500, L 4500",
+    "start_date": 1949,
+    "end_date": 1961,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 34,
+    "title": "Schwere Lkw L 6600, L 315, L 329, L 326/334, L 331, L 332",
+    "start_date": 1950,
+    "end_date": 1964,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 35,
+    "title": "Unimog",
+    "start_date": 1951,
+    "end_date": 1963,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 36,
+    "title": "Mittelschwere Frontlenker-Lkw",
+    "start_date": 1954,
+    "end_date": 1969,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 37,
+    "title": "Transporter der Baureihe 319",
+    "start_date": 1956,
+    "end_date": 1968,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 38,
+    "title": "Schwere Frontlenker-Lkw LP 333",
+    "start_date": 1957,
+    "end_date": 1963,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 39,
+    "title": "Mittelschwere Kurzhauber-Lkw",
+    "start_date": 1959,
+    "end_date": 1984,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 40,
+    "title": "Schwere Kurzhauber-Lkw",
+    "start_date": 1959,
+    "end_date": 1994,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 42,
+    "title": "Schwere Frontlenker-Lkw mit kubischem Fahrerhaus",
+    "start_date": 1963,
+    "end_date": 1974,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 41,
+    "title": "Unimog 406",
+    "start_date": 1963,
+    "end_date": 1985,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 43,
+    "title": "Mittelschwere Frontlenker-Lkw mit kubischem Fahrerhaus",
+    "start_date": 1965,
+    "end_date": 1984,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 44,
+    "title": "Leichte Frontlenker-Lkw der LP-Reihe",
+    "start_date": 1965,
+    "end_date": 1984,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 45,
+    "title": "Transporter der Baureihe T2",
+    "start_date": 1967,
+    "end_date": 1986,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 46,
+    "title": "Leichttransporter der Typenreihe L 206 D/L 207/L 306 D/l 307",
+    "start_date": 1970,
+    "end_date": 1977,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 47,
+    "title": "Schwere Lkw der Neuen Generation",
+    "start_date": 1973,
+    "end_date": 1990,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 48,
+    "title": "Mittelschwere Lkw der Neuen Generation",
+    "start_date": 1975,
+    "end_date": 1990,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 49,
+    "title": "Transporter der Baureihe TN bzw. T1",
+    "start_date": 1977,
+    "end_date": 1994,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 50,
+    "title": "Leichte Lkw der Baureihe LN 2",
+    "start_date": 1984,
+    "end_date": 1998,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 51,
+    "title": "Unimog 407 bis  UX 100",
+    "start_date": 1985,
+    "end_date": 2002,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 52,
+    "title": "Transporter der Baureihe T2",
+    "start_date": 1986,
+    "end_date": 1996,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 53,
+    "title": "Transporter MB 100 D",
+    "start_date": 1987,
+    "end_date": 1995,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 54,
+    "title": "Schwere Klasse (SK)",
+    "start_date": 1988,
+    "end_date": 1996,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 55,
+    "title": "Mittelschwere Klasse (MK)",
+    "start_date": 1990,
+    "end_date": 1998,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 56,
+    "title": "Sprinter",
+    "start_date": 1995,
+    "end_date": 2000,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 57,
+    "title": "Actros 1",
+    "start_date": 1996,
+    "end_date": 2003,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 62,
+    "title": "Vito 1",
+    "start_date": 1996,
+    "end_date": 2003,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 63,
+    "title": "Vario",
+    "start_date": 1996,
+    "end_date": 2013,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 58,
+    "title": "Actros 1 Bau",
+    "start_date": 1997,
+    "end_date": 2003,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 64,
+    "title": "Atego 1",
+    "start_date": 1998,
+    "end_date": 2004,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 67,
+    "title": "Econic 1",
+    "start_date": 1998,
+    "end_date": 2013,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 69,
+    "title": "Sprinter 2",
+    "start_date": 2000,
+    "end_date": 2006,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 70,
+    "title": "Axor 1 Sattelzugmaschine",
+    "start_date": 2001,
+    "end_date": 2004,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 72,
+    "title": "Unimog",
+    "start_date": 2002,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 59,
+    "title": "Actros 2",
+    "start_date": 2003,
+    "end_date": 2008,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 73,
+    "title": "Vito 2",
+    "start_date": 2003,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 71,
+    "title": "Axor 2",
+    "start_date": 2004,
+    "end_date": 2012,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 65,
+    "title": "Atego 2",
+    "start_date": 2004,
+    "end_date": 2013,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 74,
+    "title": "Sprinter neu",
+    "start_date": 2006,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 60,
+    "title": "Actros 3",
+    "start_date": 2008,
+    "end_date": 2012,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 61,
+    "title": "Actros neu",
+    "start_date": 2011,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 75,
+    "title": "Antos",
+    "start_date": 2012,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 66,
+    "title": "Atego Euro 6",
+    "start_date": 2013,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 68,
+    "title": "Econic 2",
+    "start_date": 2013,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 76,
+    "title": "Arocs",
+    "start_date": 2013,
+    "end_date": 9999,
+    "image": "",
+    "description": ""
+  }
+]

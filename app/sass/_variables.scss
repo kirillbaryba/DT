@@ -1,0 +1,43 @@
+$icon-font-path: '../fonts/';
+
+//body, html
+$global-vh: 100%;
+$global-vw: 100%;
+
+//buttons gray
+$btn-gray-color:  #222;
+$btn-gray-bg: #F2F2F2;
+$btn-gray-border: transparent;
+
+//buttons buy
+$btn-buy-color: #fff;
+$btn-buy-bg: #fd9c94;
+$btn-buy-border: transparent;
+
+$btn-darken-color: #E6E6E6;
+$btn-darken-bg: #2E2E2E;
+$btn-darken-border: transparent;
+
+//tile bottom
+$tile-mbottom: 30px;
+
+//tile caption
+$tile-cap-name: 1.286em; // 18px
+$tile-cap-company: 1.071em; // 15px
+$tile-cap-margin: .3em; // 18px
+
+
+//variables 
+$blacksword: 'Blacksword';
+$light-gray:  #D9D9D9;
+
+
+//progress bar
+$progress-grey-bg: #bdbdbd;
+$progress-vh: 0.429em;
+
+$screen-xs: 320px !default;
+$screen-xs-min: $screen-xs !default;
+$dropdown-link-active-bg: #222 !default;
+
+

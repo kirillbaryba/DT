@@ -1,0 +1,92 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-truck-2 {
+  width: 1.63671875em;
+}
+
+.icon-truck {
+  width: 1.400390625em;
+}
+
+.icon-video {
+  width: 1.1904296875em;
+}
+
+.icon-arrow-left {
+  width: 1.4541015625em;
+}
+
+.icon-arrow-right {
+  width: 1.4541015625em;
+}
+
+.icon-caret-right {
+  width: 0.5em;
+}
+
+.icon-clear {
+  width: 0.7373046875em;
+}
+
+.icon-download {
+  width: 0.841796875em;
+}
+
+.icon-engine {
+  width: 1.322265625em;
+}
+
+.icon-media {
+  width: 1.3330078125em;
+}
+
+.icon-media-360 {
+  width: 1.7138671875em;
+}
+
+.icon-pdf {
+  width: 0.875em;
+}
+
+.icon-photo {
+  width: 1.3330078125em;
+}
+
+.icon-photo-download {
+  width: 1.0029296875em;
+}
+
+.icon-safety {
+  width: 1.189453125em;
+}
+
+.icon-sound {
+  width: 1.3330078125em;
+}
+
+.icon-swipe {
+  width: 0.96484375em;
+}
+
+.icon-tap {
+  width: 0.650390625em;
+}
+
+.icon-time-travel {
+  width: 0.9833984375em;
+}

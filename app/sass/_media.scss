@@ -1,0 +1,77 @@
+.media-heading {
+    font-size: 1.429em;
+    color: $brand-primary;
+    padding-right: 35px;
+    @media (max-width: $screen-xs-max) {
+            font-size: 1.1em;        
+        }
+}
+
+
+.media-vendor-name {
+    padding: 10px 0;
+}
+
+.units-count-txt {
+    padding-left: 10px;
+}
+
+.media-wh {
+    width: 64px;
+}
+
+//media list
+.media-list {
+    background-color: #fff;
+    border-radius: $border-radius-large;
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+.media-container,
+.media-footer {
+    display: table;
+    width: 100%;
+}
+
+.media-container {
+    padding: 15px;
+}
+
+.media-footer-top,
+.media-footer-bottom {
+    padding: 15px;
+}
+
+.media-footer-top {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0;
+}
+
+.media-footer-bg {
+    background-color: #fafafa;
+    //padding: 15px 0;
+    //    @include border-left-radius($border-radius-large);
+    @include border-bottom-radius($border-radius-large);
+}
+
+//transactions-list
+.transaction-body {
+    padding: 15px 0;
+    float: left;
+    width: 100%;
+}
+
+.transaction-items-list {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .close {
+        font-size: 3em;
+        right: 30px;
+    }
+}

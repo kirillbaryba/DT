@@ -1,0 +1,22 @@
+//main stream tile
+
+.article-tile{
+    .product-caption-name{
+        margin-bottom: 3em;
+        white-space: normal;
+        @media (max-width: $screen-xs-max) {
+            margin: 20px auto 30px;
+        }
+            
+    }
+    .caption-share-wrapper{
+        padding-bottom: 10px;
+        margin:0 3em;
+    }
+    .popover-tile-share {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 4em;
+}
+}
